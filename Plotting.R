@@ -1,7 +1,6 @@
 # Load required libraries
 install.packages("ggplot2")
 library(ggplot2)
-
 # Read the data for the specified dates (2007-02-01 and 2007-02-02)
 data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",
                    na.strings = "?")
