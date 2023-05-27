@@ -5,6 +5,7 @@ library(ggplot2)
 data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",
                    na.strings = "?")
 
+
 # Convert the Date and Time variables to appropriate classes
 data$DateTime <- strptime(paste(data$Date, data$Time), format = "%d/%m/%Y %H:%M:%S")
 
